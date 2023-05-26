@@ -1,0 +1,21 @@
+package com.yash.db.serviceimpl;
+
+import java.util.List;
+
+import com.yash.db.entity.User;
+import com.yash.db.service.UserService;
+
+public class UserServiceImpl implements UserService{
+
+	List<User> list=List.of(new User(0011L, "Rushi", "99876343"),
+			new User(0012L, "Ravi", "99834343"),
+			new User(0013L, "Rushi", "99876993")
+			);
+	
+	@Override
+	public User getUser(long id) {
+        
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.yash.db.serviceimpl;
+
+public class UserServiceImpl {
+
+}

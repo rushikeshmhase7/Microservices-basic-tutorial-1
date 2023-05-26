@@ -1,0 +1,22 @@
+package com.yash.controller;
+
+import java.util.Collections;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.yash.model.ProductItem;
+
+@RestController
+@RequestMapping("/cart")
+public class ProductCartController {
+
+	@GetMapping("/{userId}")
+	public List<ProductItem> getCart(@PathVariable(userId) String userId){
+		
+		return Collections.singletonList(new ProductItem("Shirt",2000,"blue color",4.3));
+	}
+}

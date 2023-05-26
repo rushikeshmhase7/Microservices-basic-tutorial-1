@@ -1,0 +1,5 @@
+package com.yash.db.entity;
+
+public class User {
+
+}

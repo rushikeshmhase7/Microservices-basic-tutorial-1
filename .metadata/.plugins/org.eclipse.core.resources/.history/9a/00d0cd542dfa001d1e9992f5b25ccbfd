@@ -1,0 +1,5 @@
+package com.yash.db.service;
+
+public interface UserService {
+
+}
